@@ -1,0 +1,7 @@
+.line {
+    height: 30px;
+    width: 2000px;
+    border: 3px;
+    background-color: black;
+    transform: rotateZ(10deg);
+}

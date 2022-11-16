@@ -4,9 +4,9 @@
   <div class="container">
     <div class="View">
       <div id="frame">
-        <div v-for="poster, idx in posters" :key="idx"
+        <div v-for="poster, idx of posters" :key="idx"
           id="card"
-          :class="[`${idx}`]" @click="movieDetail(idx)"></div>
+          :class="[`${idx}`]" @click="showDetail(idx)"></div>
       </div>
     </div>
   </div>
@@ -27,22 +27,22 @@ export default {
   data() {
     return {
       posters: {
-        movie1: { title : 'title1', url : 'url1'},
-        movie2: { title : 'title2', url : 'url2'},
-        movie3: { title : 'title3', url : 'url3'},
-        movie4: { title : 'title4', url : 'url4'},
-        movie5: { title : 'title5', url : 'url5'},
-        movie6: { title : 'title6', url : 'url6'},
-        movie7: { title : 'title7', url : 'url7'},
-        movie8: { title : 'title8', url : 'url8'},
+        movie1: { title : 'title1', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie2: { title : 'title2', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie3: { title : 'title3', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie4: { title : 'title4', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie5: { title : 'title5', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie6: { title : 'title6', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie7: { title : 'title7', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
+        movie8: { title : 'title8', url : 'https://www.youtube.com/embed/GvKQKnIVy1I?autoplay=1&mute=1', content: 'contetn'},
       },
       detailOn: false,
     }
   },
   methods: {
-    movieDetail: function(e) {
-      console.log(e)
-      this.detailOn = true
+    showDetail: function(e) {
+      console.log(this.posters[e])
+      this.$store.commit('SHOW_DETAIL', this.posters[e])
     }
   }
 }

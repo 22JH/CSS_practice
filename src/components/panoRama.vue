@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="panorama-frame">
   <navBar/>
   <div class="container">
     <div class="View">
@@ -8,8 +8,10 @@
           id="card"
           :class="[`${idx}`]" @click="showDetail(idx)"></div>
       </div>
+          <h1 class="상영중">Now In Theaters</h1>
     </div>
   </div>
+  
   <!-- <div class="line"> -->
 
   <!-- </div> -->

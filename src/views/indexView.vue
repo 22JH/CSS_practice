@@ -2,8 +2,11 @@
   <div class="home">
     <panoRama/>
     <div v-if="detailOn">
-    <div id="section1"></div>
-      <IndexDetail/>
+      <div id="section1"></div>
+        <IndexDetail/>
+    </div>
+    <div>
+      <RecommandMovie/>
     </div>
   </div>
 </template>
@@ -12,6 +15,7 @@
 // @ is an alias to /src
 import panoRama from '@/components/panoRama.vue'
 import IndexDetail from '@/components/IndexDetail.vue'
+import RecommandMovie from '@/components/RecommandMovie.vue'
 
 export default {
   name: 'indexView',
@@ -19,6 +23,7 @@ export default {
     // HelloWorld,
     panoRama,
     IndexDetail,
+    RecommandMovie,
   },
   data(){
     return{

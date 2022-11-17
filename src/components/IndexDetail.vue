@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index-detail-frame">
     <div class="videoTop">
       <section class="iframebox">
         <iframe class="iframe" :src="movieData.url"></iframe>

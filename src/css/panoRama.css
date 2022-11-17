@@ -1,22 +1,30 @@
-body {
-  margin: 0;
-  background-color: rgb(60, 73, 73);
+/* body{
+} */
+
+.panorama-frame {
+  background-color: blue;
+  /* margin: 0; */
+  height: 130vh;
+  width: 100vw;
+  /* background-color: rgb(60, 73, 73); */
   position: relative;
  
 }
 
 .container {
-    height: 900px;
-    /* width: ; */
-    margin: auto;
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hiddenss;
+    /* margin: auto; */
+    /* overflow: hidden; */
     /* border: 10px solid rgb(10, 10, 10, 0.2) */
 }
 
 .View {
   position: relative;
   width: 600px;
-  margin: 100px auto 0 auto;
+  margin: 0px auto auto auto;
+  padding-top: 100px;
   perspective: 1100px;
   backface-visibility: hidden;
   /* transform: rotateY(-360deg) translateZ(-412px); */
@@ -42,6 +50,15 @@ body {
   position: absolute;
   opacity: 0.8;
   backface-visibility: hidden;
+  /* visibility: collapse; */
+  box-shadow: 20.0px -20px 30px 10px hsl(0deg 0% 0%);
+}
+.상영중 {
+  /* border: 3px inset rgba(47, 115, 201, 0.75); */
+  /* background-position: center; */
+  position: absolute;
+  /* backface-visibility: hidden; */
+  transform:;
   box-shadow: 8.0px 16px 16px hsl(0deg 0% 0%);
 }
 .movie0{

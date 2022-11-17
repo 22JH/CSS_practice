@@ -1,3 +1,9 @@
+.index-detail-frame {
+  background-color: brown;
+  width: 100vw;
+
+}
+
 .videoTop {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -28,12 +34,12 @@
   height: 3000px;
   width: 167vh;
   border: 2px black;
-  background-color: rgba(0, 0, 0, 0.4)
+  /* background-color: rgba(0, 0, 0, 0.4) */
 }
 
 .poster-img{
   height: 85vh;
   width: 68vh;
   padding-right: 10vh;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
 }

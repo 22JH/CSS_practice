@@ -1,0 +1,11 @@
+.recommand-movie-frame{
+  background-color: rgb(120, 175, 73);
+  width: 300vw;
+  height: 150vh;
+}
+
+.background-text{
+  font-size: 300px;
+  padding-left: 10vw;
+  padding-top: 30vw;
+}

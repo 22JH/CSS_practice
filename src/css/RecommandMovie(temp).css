@@ -1,0 +1,83 @@
+/* *, *::before, *::after{
+  box-sizing: border-box;
+} */
+
+.recommand-movie-frame{
+  position: relative;
+  background-color: rgb(120, 175, 73);
+  width: 500vw;
+  height: 120vh;
+}
+
+.background-text{
+  position: relative;
+  font-size: 300px;
+  padding-left: 5%;
+  padding-top: 6.5%;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  background-color: violet;
+  top: 10%;
+  transform: translateY(-110%) translateX(160%);
+  opacity: 0.1;
+  box-shadow: 10.0px 10px 20px 10px hsl(0deg 0% 0%);
+}
+
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.btn{
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 65%;
+  transform: translateY(-50%);
+  color: rgba(255, 255 ,255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding :0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.btn:hover,
+.btn:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+.btn:focus {
+  outline: 1px solid black;
+}
+.btn.prev-btn {
+  left: 1vw;
+}
+.btn.next-btn {
+  left: 94vw;
+}
+
+.test {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}

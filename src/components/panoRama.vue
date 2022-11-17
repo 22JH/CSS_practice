@@ -8,7 +8,7 @@
           id="card"
           :class="[`${idx}`]" @click="showDetail(idx)"></div>
       </div>
-          <h1 class="상영중">Now In Theaters</h1>
+          <!-- <h1 class="상영중">Now In Theaters</h1> -->
     </div>
   </div>
   

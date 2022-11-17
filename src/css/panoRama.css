@@ -2,7 +2,8 @@
 } */
 
 .panorama-frame {
-  background-color: blue;
+  /* background-color: rgb(20, 9, 9); */
+  background-color: whitesmoke;
   /* margin: 0; */
   height: 130vh;
   width: 100vw;
@@ -37,7 +38,7 @@
   height: 100%;
   transform-style: preserve-3d;
   /* transform: ; */
-  animation: 둥글게 30s steps(10000, end) infinite;
+  animation: 둥글게 50s steps(10000, end) infinite;
 }
 
 
@@ -48,7 +49,7 @@
   background-image : url("../assets/space.jpeg");
   background-position: center;
   position: absolute;
-  opacity: 0.8;
+  /* opacity: 0.6; */
   backface-visibility: hidden;
   /* visibility: collapse; */
   box-shadow: 20.0px -20px 30px 10px hsl(0deg 0% 0%);

@@ -5,8 +5,11 @@
       <div id="section1"></div>
         <IndexDetail/>
     </div>
-    <div>
+    <div id="section2">
       <RecommandMovie/>
+    </div>
+    <div id="section3">
+      
     </div>
   </div>
 </template>
